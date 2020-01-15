@@ -1,0 +1,24 @@
+From ca43d73d1d55e83402a4ead8b69b4433a49cf488 Mon Sep 17 00:00:00 2001
+From: Auke Kok <auke-jan.h.kok@intel.com>
+Date: Wed, 15 Jan 2020 12:22:04 -0800
+Subject: [PATCH] Add Makefile.
+
+---
+ Makefile | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Makefile
+
+diff --git a/Makefile b/Makefile
+new file mode 100644
+index 0000000..6ca644d
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,5 @@
++all:
++	true
++install:
++	mkdir -p $(DESTDIR)/usr/lib/udev/rules.d
++	install -m0644 *.rules $(DESTDIR)/usr/lib/udev/rules.d
+-- 
+2.25.0
+
